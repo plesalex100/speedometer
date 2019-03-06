@@ -1,3 +1,11 @@
+function text(content) 
+    SetTextFont(1)
+    SetTextProportional(0)
+    SetTextScale(1.9,1.9)
+    SetTextEntry("STRING")
+    AddTextComponentString(content)
+    DrawText(0.9,0.7)
+end
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(1)
@@ -11,6 +19,7 @@ Citizen.CreateThread(function()
         
 	end
     end)
+
 
     local function RGBRainbow( frequency )
         local result = {}
